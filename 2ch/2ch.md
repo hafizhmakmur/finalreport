@@ -16,7 +16,7 @@
 #### Spesifikasi Program
 * Desain sebelum kode
 * Test Driven Development
-* Jenis Spesifikasi mulai dari[^Nugraheni2005] 
+* Jenis Spesifikasi mulai dari [^Nugraheni2005] 
   * Aplikasi vs Imperatif
   * Sekuensial vs Konkuren
   * Abstrak vs Konkret
@@ -27,22 +27,22 @@ Fault Tolerance)
 * Program yang bisa verifikasi
 
 ### Pemrograman Fungsional
-* Paradigma Pemrograman[^Harper2017]
-* Paradigma Pemrograman Fungsional[^Sabry1998]
+* Paradigma Pemrograman [^Harper2017]
+* Paradigma Pemrograman Fungsional [^Sabry1998]
 * Paradigram Pemrograman Fungsional Murni
 * Kenapa Fungsional Murni itu excellent buat Metode Formal
 [^O'Sullivan2008] [^Hudak2007] [^Pena2017]
 * Perbandingan dengan Paradigma lain
 
-#### Haskell[^Turner1985]
-* Definisi, Penemu, Filosofi[^Hughes1989]
+#### Haskell [^Turner1985]
+* Definisi, Penemu, Filosofi [^Hughes1989]
 * Fungsional Murni
 * Lazy Computing
 * Hard Typing
 * Program yang dibuat menggunakan Haskell (Hackage)
 * How to Specify and Verify (Haskell for Specification)
 
-#### Liquid Haskell[^Butler1995]
+#### Liquid Haskell [^Butler1995]
 * Definisi, Penemu, Filosofi
 * Liquid for verifying haskell
 * Usage of SMT Solver in Liquid Haskell
@@ -73,5 +73,6 @@ Fault Tolerance)
   _IEE Colloquium on Practical Application of Formal 
   Methods_, London, UK, pp. 2/1-2/3.
 [^Sabry1998]: Sabry, A. (1998). What is a purely functional language? 
-  Journal of Functional Programming, 8(1), 1-22. [^Harper2017]: Harper, R. (2017). "What, if anything, is a
+  Journal of Functional Programming, 8(1), 1-22. 
+[^Harper2017]: Harper, R. (2017). "What, if anything, is a
   programming-paradigm?". FifteenEightyFour. Cambridge University Press.
