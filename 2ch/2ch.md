@@ -50,7 +50,7 @@ Fault Tolerance)
 * Liquid haskell Case Studies
 
 [^Hinchey1995]: Hinchey, M.G., & Bowen J. (ed) (1995). _Applications of 
-  Formal Methods._ London, UK: Prentice Hall.
+  Formal Methods._ Hertfordshire, UK: Prentice Hall.
 [^Huth2004]: Huth, M., & Ryan M. (2004). _Logic in Computer Science._ 
   New York, NY: Cambridge University Press
 [^Nugraheni2005]: Nugraheni, Cecilia E., _Diktat Kuliah Metode Formal_, 
@@ -79,5 +79,5 @@ Fault Tolerance)
 [^Holloway1997]: Holloway, C.M. (1997). Why engineers should consider formal
   methods. Prosiding _16th DASC. AIAA/IEEE Digital Avionics Systems 
   Conference. Reflections to the Future_. Irvine, CA, pp. 1.3-16
-[^Morinn2003]: Monin, J, & Hinchey, M. (2003). _Understanding
+[^Monin2003]: Monin, J, & Hinchey, M. (2003). _Understanding
   Formal Methods_. London, UK: Springer-Verlag
