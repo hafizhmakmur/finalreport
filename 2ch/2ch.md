@@ -1,8 +1,8 @@
 ## Bab 2
  
 ### Metode Formal [^Hinchey1995]
-* Apa itu metode formal (Definisi, Penemu, Filosofi)
-* Kenapa metode formal
+* Apa itu metode formal (Definisi, Penemu, Filosofi) [^Monin2003]
+* Kenapa metode formal [^Holloway1997]
 * Software Engineering jauh lebih tidak reliable dari other eng
 * Kenapa metode formal jarang dipake
 * Contoh metode formal yang sudah dipake
@@ -31,18 +31,18 @@ Fault Tolerance)
 * Paradigma Pemrograman Fungsional [^Sabry1998]
 * Paradigram Pemrograman Fungsional Murni
 * Kenapa Fungsional Murni itu excellent buat Metode Formal
-[^O'Sullivan2008] [^Hudak2007] [^Pena2017]
+[^Turner1985] [^Hughes1989] [^Butler1995]
 * Perbandingan dengan Paradigma lain
 
-#### Haskell [^Turner1985]
-* Definisi, Penemu, Filosofi [^Hughes1989]
+#### Haskell [^O'Sullivan2008]
+* Definisi, Penemu, Filosofi [^Hudak2007]
 * Fungsional Murni
 * Lazy Computing
 * Hard Typing
 * Program yang dibuat menggunakan Haskell (Hackage)
 * How to Specify and Verify (Haskell for Specification)
 
-#### Liquid Haskell [^Butler1995]
+#### Liquid Haskell [^Pena2017]
 * Definisi, Penemu, Filosofi
 * Liquid for verifying haskell
 * Usage of SMT Solver in Liquid Haskell
@@ -50,7 +50,7 @@ Fault Tolerance)
 * Liquid haskell Case Studies
 
 [^Hinchey1995]: Hinchey, M.G., & Bowen J. (ed) (1995). _Applications of 
-  Formal Methods._ Great Britain, UK: Prentice Hall.
+  Formal Methods._ London, UK: Prentice Hall.
 [^Huth2004]: Huth, M., & Ryan M. (2004). _Logic in Computer Science._ 
   New York, NY: Cambridge University Press
 [^Nugraheni2005]: Nugraheni, Cecilia E., _Diktat Kuliah Metode Formal_, 
@@ -72,7 +72,12 @@ Fault Tolerance)
   language for formal specification, 
   _IEE Colloquium on Practical Application of Formal 
   Methods_, London, UK, pp. 2/1-2/3.
-[^Sabry1998]: Sabry, A. (1998). What is a purely functional language? 
-  Journal of Functional Programming, 8(1), 1-22. 
-[^Harper2017]: Harper, R. (2017). "What, if anything, is a
-  programming-paradigm?". FifteenEightyFour. Cambridge University Press.
+[^Sabry1998]: Sabry, A. (1998). What is a purely functional language?. 
+  _Journal of Functional Programming_, 8(1), 1-22. 
+[^Harper2017]: Harper, R. (2017). _What, if anything, is a
+  programming-paradigm?_. FifteenEightyFour. Cambridge University Press.
+[^Holloway1997]: Holloway, C.M. (1997). Why engineers should consider formal
+  methods. Prosiding _16th DASC. AIAA/IEEE Digital Avionics Systems 
+  Conference. Reflections to the Future_. Irvine, CA, pp. 1.3-16
+[^Morinn2003]: Monin, J, & Hinchey, M. (2003). _Understanding
+  Formal Methods_. London, UK: Springer-Verlag
