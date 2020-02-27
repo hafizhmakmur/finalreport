@@ -1,6 +1,6 @@
 ## Bab 2
  
-### Metode Formal
+### Metode Formal [^1]
 * Apa itu metode formal (Definisi, Penemu, Filosofi)
 * Kenapa metode formal
 * Software Engineering jauh lebih tidak reliable dari other eng
@@ -47,3 +47,5 @@ Fault Tolerance)
 * Usage of SMT Solver in Liquid Haskell
 * Refinement, Inference, and Polymorphism
 * Liquid haskell Case Studies
+
+[^1]: Text, [Link](https://www.google.com)
