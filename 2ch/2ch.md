@@ -1,11 +1,17 @@
 ## Bab 2
  
 ### Metode Formal [^Hinchey1995]
-* Apa itu metode formal (Definisi, Penemu, Filosofi) [^Monin2003]
+* Apa itu metode formal (Definisi, Penemu, Filosofi) [^Monin2003]   
+  Menurut Monin, sebenarnya istilah Teknik Formal lebih pantas untuk 
+  digunakan dibandingkan Metode Formal karena teknik ini belum memiliki
+  metodologi yang baku. Namun karena istilah Metode Formal lebih 
+  populer maka untuk selanjutnya dalam tulisan ini istilah Metode
+  Formal lah yang akn digunakan.
 * Kenapa metode formal [^Holloway1997]
 * Software Engineering jauh lebih tidak reliable dari other eng
 * Kenapa metode formal jarang dipake
 * Contoh metode formal yang sudah dipake
+* Kelemahan Metode Formal
 
 #### Justifikasi Logis [^Huth2004]
 * Aturan Logis
@@ -16,15 +22,10 @@
 #### Spesifikasi Program
 * Desain sebelum kode
 * Test Driven Development
-* Jenis Spesifikasi mulai dari [^Nugraheni2005] 
-  * Aplikasi vs Imperatif
-  * Sekuensial vs Konkuren
-  * Abstrak vs Konkret
 
 #### Verifikasi Program
-* Jenis Verifikasi (Security, Concurrency, Completness, Real time,
-Fault Tolerance)
-* Program yang bisa verifikasi
+* Verifikasi dengan Model Checking (Model Based)
+* Verifikasi dengan Semantic Entailment (Proof Based)
 
 ### Pemrograman Fungsional
 * Paradigma Pemrograman [^Harper2017]
@@ -43,18 +44,30 @@ Fault Tolerance)
 * How to Specify and Verify (Haskell for Specification)
 
 #### Liquid Haskell [^Pena2017]
-* Definisi, Penemu, Filosofi
-* Liquid for verifying haskell
+* Definisi, Penemu, Filosofi  
+  Liquid Haskell merupakan sebuah _type-checker_ untuk bahasa 
+  fungsional Haskell yang bertujuan untuk membantu memudahkan 
+  pemrogram untuk memverifikasi program mereka dengan usaha 
+  sesedikit mungkin. Untuk itu _type-checker_ ini menggunakan sebuah
+  teknologi bernama _Liquid Types_ yang merupakan singkatan dari 
+  _Logically Qualified Data Types_. Pada dasarnya, teknologi ini 
+  menggunakan SMT Solver untuk secara instan memverifikasi sebuah 
+  program yang sudah dituliskan spesifikasinya dalam _Liquid Types_.
+  Dengan itu, tidaklah lagi diperlukan waktu yang panjang untuk 
+  memverifikasi program dengan menuliskan persamaan matematika dengan
+  tangan karena hal itu sudah bisa ditangani oleh komputer.
+* Liquid Types
 * Usage of SMT Solver in Liquid Haskell
+* Kelemahan Liquid Haskell
 * Refinement, Inference, and Polymorphism
 * Liquid haskell Case Studies
+
+#### Concurrency in Haskell
 
 [^Hinchey1995]: Hinchey, M.G., & Bowen J. (ed) (1995). _Applications of 
   Formal Methods._ Hertfordshire, UK: Prentice Hall.
 [^Huth2004]: Huth, M., & Ryan M. (2004). _Logic in Computer Science._ 
   New York, NY: Cambridge University Press
-[^Nugraheni2005]: Nugraheni, Cecilia E., _Diktat Kuliah Metode Formal_, 
-  2005 
 [^O'Sullivan2008]: O'Sullivan, B., Stewart D., & Goerzen J. (2008). 
   _Real World Haskell_, Massachusets, MA: O'Reilly.
 [^Hudak2007]: Hudak, P., Hughes, J., Jones S.P., & Wadler P. (2007). 
