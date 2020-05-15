@@ -55,3 +55,20 @@
 
 9 Mei 2020
 * Finally maybe we can understand those random capital T
+
+10 Mei 2020
+
+11 Mei 2020
+* apt-file can be used to know what package is your file come from
+
+12 Mei 2020
+* Reader : Global Var, Writer : Accumulate Var
+* State is confusing. Learnyouahs has an explanation.
+
+13 Mei 2020
+* Ch 3.3 in Understanding FM; Proof/Model Theory?
+
+14 Mei 2020
+* Nope, measure can be not bool.
+* Niki Vazou is more similiar to your ideal than you imagine :D
+
