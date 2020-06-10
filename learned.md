@@ -72,3 +72,34 @@
 * Nope, measure can be not bool.
 * Niki Vazou is more similiar to your ideal than you imagine :D
 
+15 Mei 2020
+* State Monad maybe is more understandable from the wiki itself
+
+16 Mei 2020
+* The Marlow parallel book may be helping
+
+17 Mei 2020
+* If you want to purge cabal, delete ~/.cabal AND ~/.ghc
+* Isnt there any Formal Method history?
+* Nikki Vazou herself has write a more relevant disertation on Liquid Haskell
+
+18 Mei 2020
+* Nope Monad Transformer is as impenetrable as ever
+* What a coincidence laziness in What I Wish is similar to beginning of Par
+  Book
+* The liquid haskell disertation really explains things better
+
+19 Mei 2020
+* Measure is nonsense
+* dont use null in liquid haskell ed code... somehow
+
+20 Mei 2020
+* Custom prelude sounds cool
+* What I wish is quite a compilation of interesting trivia
+
+28 Mei 2020
+* There is a special section for "Testing" im What I Wish
+
+9 Juni 2020
+* Limitations of Liquid Haskell in "eScholarship"
+* GHost and assert in Chapter 4 of "eScholarship"
