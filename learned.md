@@ -103,3 +103,9 @@
 9 Juni 2020
 * Limitations of Liquid Haskell in "eScholarship"
 * GHost and assert in Chapter 4 of "eScholarship"
+
+19 Juni 2020
+* "There is no such thing as correct" in leftpad LH blog
+
+5 Juli 2929
+* Choosing the right abstraction level is essential - Monin Ch 2
