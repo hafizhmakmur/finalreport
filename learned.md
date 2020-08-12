@@ -107,5 +107,13 @@
 19 Juni 2020
 * "There is no such thing as correct" in leftpad LH blog
 
-5 Juli 2929
+5 Juli 2020
 * Choosing the right abstraction level is essential - Monin Ch 2
+
+12 Agustus 2020
+* Silakan tuliskan bab 1-3 (bab 1: background motivation terkait mengapa topik
+  ini diperlukan, apa tujuannya, kaitkan dengan software engineering yang
+  dipelajari selama ini di S1, bagaimana mengukur ketercapaian tujuan tersebut;
+  bab 2: literatur yang sudah dikaji; bab 3: analisa masalah dan explorasi yang
+  kamu lakukan tentang liquid haskell).
+
