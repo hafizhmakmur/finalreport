@@ -117,3 +117,9 @@
   bab 2: literatur yang sudah dikaji; bab 3: analisa masalah dan explorasi yang
   kamu lakukan tentang liquid haskell).
 
+14 Agustus 2020
+* ln -s ~/.cabal/store/ghc-8.6.5/package.db
+  ~/.ghc/x86_64-darwin-8.6.5/package.conf.d
+* the problem is in default package environment
+* cabal install <pandoc> --only-dependenices and then
+  runghc Setup configure --user may work i guess....?
