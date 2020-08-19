@@ -110,13 +110,139 @@ Formal bisa dijustifikasi. Usaha besar yang dibutuhkan untuk melakukan Metode
 Formal ini harus dikurangi untuk bisa memungkinkan Metode Formal untuk
 digunakan lebih luas lagi kepada lebih banyak pemrogram yang membutuhkannya.  
 * Contoh metode formal yang sudah dipake
+
+Salah satu eksperimen skalah besar pengaplikasian Metode Formal dilakukan pada
+proyek CICS yang dilakukan oleh IBM (Taman Huxley, Inggris) dalam kerjasama
+dengan Universitas Oxford (Baier, 2008). Tujuan dari proyek ini adalah untuk
+melakukan restrukturisasi mayor terhadap sebuah sistem manajemen transaksi
+besar yang sudah berjalan. Dalam keseluruhan sistem terdapat 800.000 baris kode
+yang tertuliskan dalam bahasa Assembly dan Pias, sebuah bahasa tingkat tinggi
+khusus. Ada 268.000 baris kode yang dimodifikasi dan ditulis ulang dan di dalam
+baris-baris kode itu 37.000 diantaranya diberikan spesifikasi formal
+menggunakan notasi Z. Berbagai prosedur pengukuran dilakukan untuk mengevaluasi
+dampat Metode Formal terhadap produktifitas dan kualitas. Hasilnya dalah
+sebagai berikut:
+
+- Biaya pengembangan berkurang 9 persen
+
+- 2.5 kali lebih sedikit error pada bagian program yang dikembangkan
+menggunakan notasi Z dalam 8 bulan pertama setelah instalasi
+
+- Error yang dilaporkan memiliki keseriusan lebih rendah
+
+Eksperimen ini merupakan sebuah eksperimen yang menarik karena banyaknya kode
+yang terlibat. Namun, eksperimen ini memiliki cakupan yang terbatas karena
+eksperimen hanya melakukan eksperimen terhadap notasi formal Z serta tidak
+memperhitungkan teknik teknik pembuktian yang dilakukan.
 * Kelemahan Metode Formal
 
-#### Spesifikasi dan Verifikasi Program
-* Spesifikasi Program
-* Verifikasi dengan Model Checking (Model Based)
-* Verifikasi dengan Semantic Entailment (Proof Based)
+Metode Formal bukan merupakan sebuah teknik adiguna yang bisa digunakan untuk
+memverifikasi seluruh program yang dibuat. Ada beberapa kelemahan dari teknik
+ini yang harus diperhatikan (Monin, 2003):
 
+1. Selalu ada jarak antara spesifikasi format yang tertulis dengan objek yang
+direpresentasikan. Hal ini serupa seperti yang terjadi pada ilmu fisika. Tidak
+bisa dibuktikan bahwa hukum-hukum fisika benar-benar merepresentasikan dunia
+nyata namun bisa diyakini bahwa hukum-hukum itu cukup dekat dengan dunia nyata
+untuk tujuan saat ini.
+
+2. Dibutuhkan waktu untuk memahami dan menggunakan notasi yang dipakai.
+Keyakinan terhadap kebeneran dari sebuah spesifikasi program hanya bisa
+diketahui dengan proses analisis yang mendalam. Metode Formal juga membutuhkan
+aspek teori serta kemampuan untuk memanipulasi berbagai teknik matematika yang
+ada.
+
+3. Lebih banyak waktu yang akan dihabiskan pada tahap awal program
+(spesifikasi, desain). Eksperimen menunjukkan bahwa waktu yang dihabiskan pada
+tahap awal ini biasanya akan dikompensasi dengan waktu yang berkurang pada
+tahap akhir (tes, integrasi). Formalisasi membuka di awal beberapa masalah yang
+biasanya hanya akan ditemukan pada proses akhir seperti saat debugging yang
+mungkin akan membutuhkan penanganan yang lebih besar karena sulitnya mengubah
+program yang sudah dibuat secara besar-besaran. Berbagai kesulitan yang
+ditemukan dalam melakukan formalisasi sebenarnya merupakan refleksi terhadap
+kesulitan proyek yang dilakukan namun proses modelisasi menunjukkan
+kompleksitas permasalahan yang tidak terlihat pada pandangan pertama.
+#### Spesifikasi dan Verifikasi Program
+Pada dasarnya, dua komponen paling utama dalam melakukan Metode Formal adalah
+spesifikasi dan verifikasi. Spesifikasi merupakan formalisasi atau penulisan
+kebutuhan yang dimiliki dalam notasi yang formal. Verifikasi adalah proses
+untuk membuktikan kebenaran suatu program terhadap spesifikasi yang sudah
+dituliskan sebelumnya.
+* Spesifikasi Program
+
+Representasi paling sederhana untuk spesifikasi program adalah pasangan
+(prekondisi, poskondisi) (Monin, 2003). Prekondisi adalah asumsi mengenai
+kondisi yang relevan yang terjadi sebelum eksekusi program. Poskondisi adalah
+asumsi mengenai hasil yang diinginkan setelah program yang dilakukan.
+Asumsi-asumsi tersebut dituliskan menggunakan formula logis yang memiliki arti
+matematis sehingga bisa dilakukan kalkulasi matematika terhadap asumsi
+tersebut. Verifikasi kemudian merupakan sebuah proses untuk membuktikan bahwa
+sebuah program yang memenuhi prekondisi harus melakukan aksi yang pada akhirnya
+memenuhi poskondisi.
+
+Berbagai properti yang dituliskan dalam spesifikasi bisa cukup elementer
+seperti menyatakan bahwa hasil tidak pernah melampaui nilai tertentu, program
+akan selalu berakhir (tidak berjalan selamanya), dan seterusnya. Verifikasi
+bergantung pada spesifikasi dalam menentukan apa yang program harus dan tidak
+boleh lakukan. Kesalahan hanya ditemukan jika program tidak memenuhi
+spesifikasi tertentu. Sistem dianggap “benar” jika sistem mampu memenuhi
+seluruh spesifikasi. Jadi kebenaran suatu program selalu merupakan sebuah
+properti yang relatif terhadap spesifikasi bukan merupakan sebuat properti yang
+absolut pada sistem.
+* Verifikasi Program
+
+-Pendekatan-pendekatan dalam memverifikasi
+
+Menurut Michael Huth (Huth, 2004), ada berbagai pendekatan dalam melakukan
+verifikasi:
+
+1. Berbasis Bukti dan Berbasis Model. Dalam Verifikasi Berbasis Bukti
+deskripsi sistem dituliskan dalam kumpulan formula Γ dan spesifikasi ditulisan
+dalam formula yang lain φ. Metode verifikasi kemudian mencoba mencari bukti
+bahwa Γ |− φ atau dengan kata lain Γ mengimplikasikan φ. Hal ini biasanya
+membutuhkan panduan dan keahlian pengguna. Dalam pendekatan berbasis model,
+sistem direpresentasikan sebagai sebuat model M dalam teori logika yang sesuai.
+Spesifikasi kembali direpresentasikan sebagai formula φ dan metode verifikasi
+menentukan apakah model M memenuhi φ (ditulis M φ). Komputasi ini biasanya bisa
+dilakukan secara otomatis untuk model berhingga.
+
+2. Derajat otomasi. Verifikasi memiliki berbagai derajat untuk seberapa
+otomatis metode verifikasi bisa dijalankan mulai dari dilakukan dengan manual
+secara keseluruhan ataupun otomatis. Banyak teknik yang menggunakan komputer
+berada di antara dua ekstrim itu.
+
+3. Properti atau keseluruhan. Spesifikasi mungkin hanya mendeskripsikan
+sebagian properti dari sebuah sistem atau mungkin keseluruhan perilaku.
+Dibutuhkan usaha yang jauh lebih berat untuk memverifikasi spesifikasi yang
+mendeskripsikan keseluruhan perilaku sistem.
+
+4. Domain aplikasi. Domain aplikasi bisa memiliki banyak arti mulai dari
+apakah verifikasi dilakukan pada perangkat lunak atau perangkat keras,
+sekuensial atau paralel, memilik akhir atau reaktif, dan sebagainya. Pada
+dasarnya verifikasi pada perangkat keras jauh lebih vital untuk dilakukan
+seawal mungkin karena biaya untuk mengganti bagian kode yang salah pada sistem
+perangkat keras jauh lebih tinggi dibandingkan dengan sistem perangkat lunak.
+
+5. Sebelum atau sesudah pengembangan. Verifikasi akan memberikan manfaat yang
+lebih baik jika dilakukan di awal pengembangan sistem karena error yang
+ditangkap akan bisa ditangani dengan biaya yang lebih murah.
+
+Menurut Nikki Vazou (Vazou, 2017) kemungkinan perbedaan pendekatan lain adalah
+apakah verifikasi dilakukan secara intrinsik atau ekstrinsik. Verifikasi
+intrinsik dilakukan terhadap program secara langsung sedangkan verifikasi
+ekstrinsik membutuhkan kode khusus lain yang khusus dituliskan untuk tujuan
+verifikasi. Contoh dari sistem verifikasi yang memiliki perbedaan ini adalah
+Liquid Haskell dan Coq. Liquid Haskell mampu menjalankan verifikasi intrinsik
+karena spesifikasi dituliskan bersamaan dengan program dan SMT Solver dapat
+dilakukan untuk menganalisis isi program sekaligus dengan spesifikasi yang
+tertuliskan secara otomatis. Pada Coq pembuktian harus dilakukan secara manual
+oleh pengguna sehingga pembuktian harus dituliskan oleh pengguna sendiri dalam
+bahasa Coq. Karena pembuktian pada Liquid Haskell merupakan pembuktian implisit
+yang dilakukan oleh SMT Solver sedangkan pembuktian pada Coq dituliskan secara
+eksplisit oleh pengguna, maka pembuktian yang ditulis pada verifikasi
+ekstrinsik jauh lebih mudah dibaca dan digunakan. Hal ini juga dikarenakan
+narasi pembuktian hanya akan tertulis dalam bahasa verifikasi tersebut tidak
+bercampur dengan kode implementasi program.
 ### Pemrograman Fungsional
 * Paradigma Pemrograman [^Harper2017]
 * Paradigma Pemrograman Fungsional [^Sabry1998]
