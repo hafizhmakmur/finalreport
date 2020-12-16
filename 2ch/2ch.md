@@ -273,10 +273,8 @@ bercampur dengan kode implementasi program.
   memverifikasi program dengan menuliskan persamaan matematika dengan
   tangan karena hal itu sudah bisa ditangani oleh komputer.
 * Liquid Types
-* Usage of SMT Solver in Liquid Haskell
 * Kelemahan Liquid Haskell
-* Refinement, Inference, and Polymorphism
-* Liquid haskell Case Studies
+* Liquid haskell Examples
 
 #### Concurrency in Haskell
 

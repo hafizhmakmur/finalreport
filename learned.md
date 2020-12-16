@@ -123,3 +123,13 @@
 * the problem is in default package environment
 * cabal install <pandoc> --only-dependenices and then
   runghc Setup configure --user may work i guess....?
+
+1 September 2020
+* Susunan bab 3
+* Jelasin lhs converter nya dulu?
+* Ajarin notasi type dulu?
+* Abis itu logika?
+* Abis itu suruh nulis spesifikasi dulu kayak create' di ch 11
+* Baru abis itu nulis implementasi?
+* yang penting itu find insert merge
+* let it be known that it is intmap
